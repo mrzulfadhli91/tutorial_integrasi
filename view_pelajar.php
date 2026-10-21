@@ -46,6 +46,7 @@
                     <td> <?php echo $view['jantina']; ?> </td>
                     <td> <?php echo $view['noHP']; ?> </td>
                     <td> <a href="update.php?id=<?php echo $view['noPelajar']; ?>"  >Update</a> </td>
+                    <td> <a href="delete.php?id=<?php echo $view['noPelajar']; ?>">Delete</a> </td>
                 </tr>
                 <?php } ?>
             </table>
