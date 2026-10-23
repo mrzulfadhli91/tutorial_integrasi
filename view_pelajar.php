@@ -27,13 +27,14 @@
             <h1>Data Pelajar</h1><br><br>
 
             <a href="add_pelajar.php">Tambah Pelajar</a><br>
-            <table>
+            <table border="1" cellpadding="10" cellspacing="0">
                 <tr>
                     <th>No Pelajar</th>
                     <th>Nama Pelajar</th>
                     <th>Jantina</th>
                     <th>No Phone</th>
                     <th>Update</th>
+                    <th>Delete</th>
                 </tr>
                 <?php
 
@@ -41,7 +42,6 @@
 
                 ?>
                 <tr>
-                    <td> <?php echo $view['noPelajar']; ?> </td>
                     <td> <?php echo $view['namaPelajar']; ?> </td>
                     <td> <?php echo $view['jantina']; ?> </td>
                     <td> <?php echo $view['noHP']; ?> </td>

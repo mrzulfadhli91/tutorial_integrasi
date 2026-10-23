@@ -13,12 +13,18 @@
         $jantina = $_POST['up_jantina'];
         $no_phone = $_POST['up_no_phone'];
 
-        mysqli_query($conn, "UPDATE pelajar SET noPelajar='$no_pelajar', namaPelajar='$nama_pelajar',jantina='$jantina',noHP='$no_phone' WHERE noPelajar = '$idpelajar' ");
+        mysqli_query($conn, "UPDATE pelajar SET 
+        noPelajar='$no_pelajar', 
+        namaPelajar='$nama_pelajar',
+        jantina='$jantina',
+        noHP='$no_phone' 
+        WHERE noPelajar = '$idpelajar' ");
 
         header("location: view_pelajar.php");
     }
 
-    $data = mysqli_query($conn, "SELECT * FROM pelajar WHERE noPelajar = '$idpelajar' ");
+    $data = mysqli_query($conn, "SELECT * FROM pelajar 
+    WHERE noPelajar = '$idpelajar' ");
     while($view = mysqli_fetch_array($data)){
 ?>
 
@@ -46,7 +52,7 @@
                 <input type="text" name="up_no_phone" value="<?php echo $view['noHP']; ?>" ><br><br>
                 <?php } ?>
 
-                <input type="submit" value="update" name="update">
+                <input type="submit" value="kemaskini" name="update">
             </form>
         </div>
     </div>
